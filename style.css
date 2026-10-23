@@ -37,7 +37,7 @@ button, input, textarea { font: inherit; }
 .main-nav a { color: var(--maroon-dark); font-size: .86rem; font-weight: 600; transition: color .2s; }
 .menu-toggle { display: none; border: 1px solid var(--gold); background: transparent; color: var(--maroon); border-radius: 7px; padding: 7px 11px; font-size: 1.25rem; }
 .hero { min-height: 570px; position: relative; isolation: isolate; display: flex; align-items: center; overflow: hidden; color: white; background: var(--maroon-dark); }
-.hero-image { position: absolute; inset: 0; z-index: -2; background: url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=2000&q=90") center 48% / cover no-repeat; }
+.hero-image { position: absolute; inset: 0; z-index: -2; background: #5b171d url("images/study-time.jpg") center 48% / cover no-repeat; }
 .hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(58,10,15,.94) 0%, rgba(79,17,22,.86) 42%, rgba(79,17,22,.25) 100%); }
 .hero-content { padding-block: 80px 90px; max-width: 1160px; }
 .eyebrow, .section-kicker { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .16em; margin: 0 0 12px; }
@@ -177,3 +177,12 @@ button, input, textarea { font: inherit; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom .container { flex-direction: column; }
 }
+
+
+/* Original school photographs supplied by the school. */
+.about-photo.photo-missing { min-height: 390px; display: grid; place-items: center; background: #f6eddd; }
+.about-photo.photo-missing::after { content: "Students celebrating at Sanskar Vidhya Mandir"; padding: 20px; color: #701d24; text-align: center; font-size: .9rem; }
+.facility-card.photo-missing { min-height: 210px; }
+.facility-card.photo-missing::before { content: "School photograph"; min-height: 210px; display: grid; place-items: center; padding: 20px; color: #701d24; background: #f6eddd; text-align: center; font-size: .85rem; }
+.gallery-grid img.photo-missing-img { display: none; }
+.gallery-grid { position: relative; }
